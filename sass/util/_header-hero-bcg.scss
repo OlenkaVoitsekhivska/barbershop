@@ -1,0 +1,12 @@
+.header-hero-bcg {
+  background-image: url("../images/mob_bcg_1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header-hero-bcg {
+    background-image: url("../images/mob_bcg_2x.jpg");
+  }
+}
