@@ -27,11 +27,13 @@ p {
 
 img {
   display: block;
+  width: 100%;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
+  padding-left: 0;
 }
 
 li {
@@ -43,6 +45,7 @@ a {
 }
 
 .container {
+  margin: 0 auto;
   padding-right: 30px;
   padding-left: 30px;
   width: 480px;
@@ -217,7 +220,7 @@ h1 {
 }
 
 .btn {
-  min-width: 160px;
+  width: 160px;
   height: 40px;
   border-radius: 25px;
   background-color: transparent;
@@ -303,5 +306,381 @@ h1 {
 
 .price__list-item + .price__list-item {
   margin-top: 20px;
+}
+
+.stats {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.stats__text {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.stats__header {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.stats__plug {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 44px;
+}
+
+.stats__list {
+  margin: -15px;
+  height: 373px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  outline: 1px dashed tomato;
+}
+
+.stats__list li {
+  width: 193px;
+  height: 133px;
+  background-color: #f7f7f7;
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stats__list li:nth-child(3) {
+  margin-top: 62px;
+}
+
+.stats__list .stats__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 36px;
+}
+
+.stats__list .stats__box:last-child {
+  padding: 20px 32px;
+}
+
+.stats__list .number {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+  position: relative;
+}
+
+.stats__list .number::after {
+  content: "+";
+  display: block;
+  width: 13px;
+  height: 22px;
+  position: absolute;
+  top: 8px;
+  right: -14px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  text-align: center;
+  color: #ff6c00;
+}
+
+.stats__list .feature {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-align: center;
+  color: #303030;
+}
+
+.masters {
+  max-width: 100%;
+  background-color: #f7f7f7;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.socials .socials__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.socials svg {
+  fill: #303030;
+  -webkit-transition: fill 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: fill 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.socials svg:hover, .socials svg:focus, .socials svg:active {
+  fill: #ff6c00;
+}
+
+h3,
+p {
+  text-align: center;
+}
+
+.pics {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.pics__list li + li {
+  margin-top: 30px;
+}
+
+.pics__parag {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(21 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+  text-align: left;
+  margin-bottom: 44px;
+}
+
+.reserve {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background: #191c26;
+}
+
+.reserve__header {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.reserve__header {
+  margin-bottom: 44px;
+}
+
+.reservation-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reservation-form input,
+.reservation-form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  position: relative;
+}
+
+.reservation-form input::-webkit-input-placeholder,
+.reservation-form textarea::-webkit-input-placeholder {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.reservation-form input:-ms-input-placeholder,
+.reservation-form textarea:-ms-input-placeholder {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.reservation-form input::-ms-input-placeholder,
+.reservation-form textarea::-ms-input-placeholder {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.reservation-form input::placeholder,
+.reservation-form textarea::placeholder {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.reservation-form input {
+  height: 24px;
+}
+
+.reservation-form textarea {
+  height: 76px;
+}
+
+.reservation-form textarea::-webkit-input-placeholder {
+  top: 0;
+  left: 0;
+}
+
+.reservation-form textarea:-ms-input-placeholder {
+  top: 0;
+  left: 0;
+}
+
+.reservation-form textarea::-ms-input-placeholder {
+  top: 0;
+  left: 0;
+}
+
+.reservation-form textarea::placeholder {
+  top: 0;
+  left: 0;
+}
+
+.reservation-form label {
+  margin-bottom: 44px;
+}
+
+.submit-btn {
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contacts {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-color: #191c26;
+  background-image: url("../images/contacts_1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts__header {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.contacts__list a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contacts__list li + li {
+  margin-top: 20px;
+}
+
+.contacts__list .contacts__icon {
+  margin-right: 16px;
 }
 /*# sourceMappingURL=main.css.map */

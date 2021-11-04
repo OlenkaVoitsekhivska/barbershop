@@ -26,10 +26,12 @@ p {
 }
 img {
   display: block;
+  width: 100%;
 }
 ul {
   list-style-type: none;
   margin: 0;
+  padding-left: 0;
 }
 li {
   list-style: none;

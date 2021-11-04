@@ -1,0 +1,35 @@
+.masters {
+  max-width: 100%;
+  background-color: #f7f7f7;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
+  .socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  svg {
+    fill: #303030;
+    transition: fill 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    &:hover,
+    &:focus,
+    &:active {
+      fill: #ff6c00;
+    }
+  }
+}
+h3,
+p {
+  text-align: center;
+}

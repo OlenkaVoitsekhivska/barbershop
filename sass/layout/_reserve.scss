@@ -1,0 +1,59 @@
+.reserve {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background: #191c26;
+}
+.reserve__header {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+.reserve__header {
+  margin-bottom: 44px;
+}
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  input,
+  textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    position: relative;
+    &::placeholder {
+      position: absolute;
+      bottom: 8px;
+      left: 0;
+      font-family: Open Sans;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: calc(15 / 11);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(157, 164, 189, 0.4);
+    }
+  }
+  input {
+    height: 24px;
+  }
+  textarea {
+    height: 76px;
+    &::placeholder {
+      top: 0;
+      left: 0;
+    }
+  }
+  label {
+    margin-bottom: 44px;
+  }
+}
+.submit-btn {
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+}
