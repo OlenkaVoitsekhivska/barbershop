@@ -82,6 +82,7 @@ a {
 }
 
 .hero {
+  width: 100%;
   padding-top: 208px;
   padding-bottom: 183px;
   background-image: url("../images/mob_bcg_1x.jpg");
@@ -160,6 +161,7 @@ h1 {
 }
 
 .about {
+  width: 100%;
   padding-top: 84px;
   padding-bottom: 84px;
 }
@@ -234,6 +236,7 @@ h1 {
 }
 
 .price {
+  width: 100%;
   padding-top: 84px;
   padding-bottom: 84px;
   background: #111319;
@@ -309,6 +312,7 @@ h1 {
 }
 
 .stats {
+  width: 100%;
   padding-top: 84px;
   padding-bottom: 84px;
 }
@@ -488,6 +492,7 @@ p {
 }
 
 .pics {
+  width: 100%;
   padding-top: 84px;
   padding-bottom: 84px;
 }
@@ -509,6 +514,7 @@ p {
 }
 
 .reserve {
+  width: 100%;
   padding-top: 84px;
   padding-bottom: 84px;
   background: #191c26;
@@ -641,6 +647,7 @@ p {
 }
 
 .contacts {
+  width: 100%;
   padding-top: 84px;
   padding-bottom: 84px;
   background-color: #191c26;
@@ -685,6 +692,7 @@ p {
 }
 
 footer {
+  width: 100%;
   padding-top: 44px;
   padding-bottom: 44px;
 }
