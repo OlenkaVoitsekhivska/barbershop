@@ -683,4 +683,48 @@ p {
 .contacts__list .contacts__icon {
   margin-right: 16px;
 }
+
+footer {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.footer-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-bottom: 20px;
+}
+
+.footer-socials li + li {
+  margin-left: 40px;
+}
+
+.footer-socials__link {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.footer__parag {
+  text-align: left;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+
+.footer__parag span {
+  margin-right: 6px;
+}
 /*# sourceMappingURL=main.css.map */
