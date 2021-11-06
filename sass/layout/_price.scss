@@ -13,7 +13,7 @@
 }
 .price__text {
   font-family: Open Sans;
-
+  // width: 332px;
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -21,7 +21,20 @@
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: 20px;
-  text-align: right;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 31px;
+  &::before {
+    content: " ";
+    width: 1px;
+    height: 60px;
+    margin-right: 43px;
+    background: inherit;
+    transform: rotate(90deg);
+    background-color: rgba(157, 164, 189, 0.6);
+  }
 }
 
 .price__header {

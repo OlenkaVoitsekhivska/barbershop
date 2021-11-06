@@ -30,6 +30,7 @@
     color: #9da4bd;
     width: 306px;
     display: block;
+    text-align: left;
   }
 }
 
@@ -42,10 +43,10 @@
   font-weight: 600;
   line-height: calc(15 / 11);
   letter-spacing: 0.1em;
-  text-align: left;
+  // text-align: left;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  position: relative;
+  // position: relative;
   color: rgba(157, 164, 189, 0.6);
   margin-left: 31px;
 }
@@ -57,6 +58,16 @@
   background: rgba(157, 164, 189, 0.6);
   transform: rotate(90deg);
 }
+// .dash {
+//   display: block;
+//   width: 1px;
+//   height: 60px;
+//   left: 91px;
+//   top: 215px;
+//   margin-right: 20px;
+//   background: rgba(157, 164, 189, 0.6);
+//   transform: rotate(90deg);
+// }
 h1 {
   font-family: Raleway;
   font-weight: bold;
