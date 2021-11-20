@@ -1,21 +1,23 @@
-.pics {
-  width: 100%;
-  padding-top: 84px;
-  padding-bottom: 84px;
-}
-.pics__list {
-  li + li {
-    margin-top: 30px;
+@media screen and (min-width: 480px) {
+  .pics {
+    width: 100%;
+    padding-top: 84px;
+    padding-bottom: 84px;
   }
-}
-.pics__parag {
-  font-family: Open Sans;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: calc(21 / 11);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #303030;
-  text-align: left;
-  margin-bottom: 44px;
+  .pics__list {
+    li + li {
+      margin-top: 30px;
+    }
+  }
+  .pics__parag {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(21 / 11);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #303030;
+    text-align: left;
+    margin-bottom: 44px;
+  }
 }

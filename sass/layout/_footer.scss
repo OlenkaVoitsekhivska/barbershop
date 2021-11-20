@@ -19,6 +19,18 @@ footer {
   line-height: calc(15 / 11);
   letter-spacing: 0.2em;
   color: #303030;
+  position: relative;
+  &[href="https://www.instagram.com/?hl=ru"]::before
+  {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    top: 7px;
+    right: 100px;
+    background-color: #303030;
+  }
 }
 .footer__parag {
   text-align: left;

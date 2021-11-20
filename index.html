@@ -5,25 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <div class="header-hero-bcg">
-    <header class="mob-header">
-     <div class="container">
-        <nav class="nav"><svg width="69px" height="55px" class="logo"><use href="./images/icons.svg#icon-logo"></use></svg><button class="menu-btn" type="button"><svg width="24px" height="16px" class="icon-menu"><use href = "./images/icons.svg#icon-menu"></use></svg></button></nav>
-    </div></header>
+   
+
 <main>
-    <section class="hero">
-        <div class="container">
-     <div class="hero__wrapper">
-       <p class="hero__parag1">A hair salon for men in Kyiv</p>
-       <h1>BarberShop</h1>
-   <p class="hero__manifesto">Мы эксперты в модных мужских стрижках. Работаем быстро,<br> осторожно и со вкусом.</p>
-</div> </div> </section>
+    
+        <header class="mob-header">
+           <div class="container">
+                <nav class="nav"><svg width="69px" height="55px" class="logo">
+                        <use href="./images/icons.svg#icon-logo"></use>
+                    </svg><button class="menu-btn" type="button"><svg width="24px" height="16px" class="icon-menu">
+                            <use href="./images/icons.svg#icon-menu"></use>
+                        </svg></button></nav>
+        </div>
+        </header>
+       
+        <header class="tab-desk__header">
+        
+            <nav class="tab-desk__nav">
+                <ul class="tab-desk__list">
+                    <li class="tab-desk__item">О нас</li>
+                    <li class="tab-desk__item">Услуги и цены</li>
+                    <li class="tab-desk__item">Мастера</li>
+                    <li class="tab-desk__item">Контакты</li>
+                </ul>
+                </nav>
+                <div class="btn-tel__wrapper">
+                <button class="btn tab-desk__btn">онлайн-запись</button>
+                <a href="+tel:+380441111111">+38 044 111 11 11</a>
+        </div>
+        </header> 
+
+     <section class="hero">
+    
+    <ul class="slider"> 
+      
+          <li> <picture>
+            <source srcset='./images/Slider_desk_1-1x.png 1x, ./images/Slider_desk_1-2x.png 2x' 
+                    media="(min-width:1200px)" />
+              <source   srcset = './images/Slider_tab_1-1x.png 1x, ./images/Slider_tab_1-2x.png 2x' 
+                    media = "(min-width:768px)"
+                    />
+                 
+                    <img src="./images/Slider_img_1-1x.png" alt="" ></picture></li>
+            <li> <picture>
+                <source srcset='./images/Slider_desk_2-1x.png 1x, ./images/Slider_desk_2-2x.png 2x' 
+                media="(min-width:1200px)" />
+                <source srcset='./images/Slider_tab_2-1x.png 1x, ./images/Slider_tab_2-2x.png 2x'
+                    media="(min-width:768px)" /><img src="./images/Slider_img_2-1x.png" alt=""  ></picture></li>
+            <li><picture>
+                <source srcset='./images/Slider_desk_3-1x.png 1x, ./images/Slider_desk_3-2x.png 2x' 
+                media="(min-width:1200px)" />
+                <source srcset='./images/Slider_tab_3-1x.png 1x, ./images/Slider_tab_3-2x.png 2x'
+                    media="(min-width:768px)" /><img src="./images/Slider_img_3-1x.jpg" alt="" ></picture></li>
+
+    </ul>
+    <ul class="slider-btns">
+    <button class="slider-btn arrow-prev">Назад</button>
+    <button class="slider-btn arrow-next">Вперед</button>
+    </ul>
+<div class="hero__wrapper">
+    <p class="hero__parag1">A hair salon for men in Kyiv</p>
+    <h1>BarberShop</h1>
+    <p class="hero__manifesto">Мы эксперты в модных мужских стрижках. Работаем быстро,<br> осторожно и со вкусом.</p>
 </div>
+
+</section>
+
 <section class="about">
-    <div class="container">
+    <div class="container about__container">
+        <ul class="about__pic-list">
+        
+        <li><picture>
+            <source srcset="./images/about1desk_1x.jpg 1x, ./images/about1desk_2x.jpg 2x" media="(min-width:1200px)">
+            <source srcset="./images/about1tab_1x.jpg 1x, ./images/about1tab_2x.jpg 2x" media="(min-width:768px)">
+            <img src="./images/about1tab_1x.jpg" alt="">
+        </picture></li>
+        <li>
+            <picture>
+                <source srcset="./images/about2desk_1x.jpg 1x, ./images/about2desk_2x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/about2tab_1x.jpg 1x, ./images/about2tab_2x.jpg 2x" media="(min-width:768px)">
+                <img src="./images/about2tab_1x.jpg" alt="">
+            </picture>
+        </li>
+        </ul>
+        <div class="about__wrapper">
     <h2 class="about__section-header">О нас</h2>
     <h3 class="about__section-subheader">Лучший Барбершоп
     твоего города</h3>
@@ -106,8 +177,10 @@
         <p class="masters__parag">для настоящих ценителей атмосферы</p>
         <h2 class="masters__header">Наши мастера</h2>
         <ul class="masters__list">
-        <li>
-            <img srcset="./images/masters1_1x.jpg 1x,./images/masters1_2x.jpg 2x " src="./images/masters1_1x.jpg 1x" sizes="(min-width:480px)418px" alt="">
+        <li><picture> <source srcset="./images/masters_desk_1_1x.jpg 1x, ./images/masters_desk_1_2x.jpg 2x" media="(min-width:1200px)">
+            <source srcset="./images/masters_tab_1_1x.jpg 1x, ./images/masters_tab_1_2x.jpg 2x" media="(min-width:768px)">
+            <source srcset="./images/masters1_1x.jpg 1x, ./images/masters1_2x.jpg 2x" media="(min-width:480px)">
+            <img  src="./images/masters1_1x.jpg 1x" alt=""></picture>
             <div class="masters__box">
                 <h3>John Smith</h3>
                     <p>Extreme Barber</p>
@@ -128,8 +201,12 @@
                         </div>
         </li>
             <li>
-                <img srcset="./images/masters2_1x.jpg 1x,./images/masters2_2x.jpg 2x " src="./images/masters2_1x.jpg 1x"
-                    sizes="(min-width:480px)418px" alt="">
+            <picture>
+                <source srcset="./images/masters_desk_2_1x.jpg 1x, ./images/masters_desk_2_2x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/masters_tab_2_1x.jpg 1x, ./images/masters_tab_2_2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/masters2_1x.jpg 1x, ./images/masters2_2x.jpg 2x" media="(min-width:480px)">
+                <img src="./images/masters1_1x.jpg 1x" alt="">
+            </picture>
                 <div class="masters__box">
                     <h3>John Smith</h3>
                     <p>Extreme Barber</p>
@@ -150,8 +227,12 @@
                 </div>
             </li>
                 <li>
-                    <img srcset="./images/masters3_1x.jpg 1x,./images/masters3_2x.jpg 2x " src="./images/masters3_1x.jpg 1x"
-                        sizes="(min-width:480px)418px" alt="">
+                <picture>
+                    <source srcset="./images/masters_desk_3_1x.jpg 1x, ./images/masters_desk_3_2x.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/masters_tab_3_1x.jpg 1x, ./images/masters_tab_3_2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/masters3_1x.jpg 1x, ./images/masters3_2x.jpg 2x" media="(min-width:480px)">
+                    <img src="./images/masters1_1x.jpg 1x" alt="">
+                </picture>
                     <div class="masters__box">
                         <h3>John Smith</h3>
                         <p>Extreme Barber</p>
@@ -178,10 +259,27 @@
     <div class="container">
         <p class="pics__parag">На латинском языке “барба” означает <br> “борода”</p>
         <ul class="pics__list">
-            <li><img srcset="./images/pic1_1x.jpg 1x, ./images/pic1_2x.jpg 2x " src="./images/pic1_1x.jpg 1x" sizes="(min-width:480px)418px" alt=""></li>
-            <li><img srcset="./images/pic2_1x.jpg 1x, ./images/pic2_2x.jpg 2x " src="./images/pic2_1x.jpg 1x" sizes="(min-width:480px)418px" alt=""></li>
-            <li><img srcset="./images/pic3_1x.jpg 1x, ./images/pic3_2x.jpg 2x " src="./images/pic3_1x.jpg 1x"  sizes="(min-width:480px)418px" alt=""></li>
-            <li><img srcset="./images/pic4_1x.jpg 1x, ./images/pic4_2x.jpg 2x " src="./images/pic4_1x.jpg 1x" sizes="(min-width:480px)418px" alt=""></li>
+            <li><picture> <source srcset="./images/pic1desk_1x.jpg  1x, ./images/pic1desk_1x.jpg  2x" media="(min-width:1200px)">
+                <source srcset="./images/pic1tab_1x.png  1x, ./images/pic1tab_2x.png  2x" media="(min-width:768px)">
+                <source srcset="./images/pic1_1x.jpg  1x, ./images/pic1_2x.jpg  2x" media="(min-width:480px)"><img src="./images/pic1_1x.jpg 1x"  alt=""></picture></li>
+            <li><picture>
+                <source srcset="./images/pic2desk_1x.jpg  1x, ./images/pic2desk_2x.jpg  2x" media="(min-width:1200px)">
+                <source srcset="./images/pic2tab_1x.png  1x, ./images/pic2tab_2x.png  2x" media="(min-width:768px)">
+                <source srcset="./images/pic2_1x.jpg  1x, ./images/pic2_1x.jpg  2x" media="(min-width:480px)"><img
+                    src="./images/pic2_1x.jpg 1x" alt="">
+            </picture></li>
+            <li><picture>
+                <source srcset="./images/pic3desk_1x.jpg  1x, ./images/pic3desk_2x.jpg  2x" media="(min-width:1200px)">
+                <source srcset="./images/pic3tab_1x.png  1x, ./images/pic3tab_2x.png  2x" media="(min-width:768px)">
+                <source srcset="./images/pic3_1x.jpg  1x, ./images/pic3_1x.jpg  2x" media="(min-width:480px)"><img
+                    src="./images/pic3_1x.jpg 1x" alt="">
+            </picture></li>
+            <li><picture>
+                <source srcset="./images/pic4desk_1x.jpg  1x, ./images/pic4desk_2x.jpg  2x" media="(min-width:1200px)">
+                <source srcset="./images/pic4tab_1x.png  1x, ./images/pic4tab_2x.png  2x" media="(min-width:768px)">
+                <source srcset="./images/pic4_1x.jpg  1x, ./images/pic4_1x.jpg  2x" media="(min-width:480px)"><img
+                    src="./images/pic4_1x.jpg 1x" alt="">
+            </picture></li>
         </ul>
     </div>
 </section>
@@ -221,12 +319,26 @@
 <footer>
     <div class="container">
         <ul class="footer-socials">
-            <li><a class="footer-socials__link" href="">Instagram</a></li>
+            <li><a class="footer-socials__link" href="https://www.instagram.com/?hl=ru">Instagram</a></li>
             <li><a class="footer-socials__link" href="">Youtube</a></li>
         </ul>
         <p class="footer__parag"><span>&copy;</span>Copyright 2020</p>
     </div>
 </footer>
 </main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $('.slider').slick({
+        arrows:true,
+        dots:true,
+        // autoplay:true,
+      prevArrow:'.arrow-prev',
+      nextArrow:'.arrow-next',
+        
+       
+    });
+</script>
 </body>
 </html>
